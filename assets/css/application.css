@@ -1,0 +1,68 @@
+/* Personla Style */
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: rgb(206, 204, 204); */
+}
+
+.imgRnd10 {
+    /* Rounded image corners */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.imgRnd5 {
+    /* Rounded image corners */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.imageShadow {
+    /* Add drop shadow */
+    -webkit-box-shadow: 2px 2px 3px 2px rgb(107, 107, 175);
+    -moz-box-shadow: 2px 2px 3px 2px rgb(107, 107, 175);
+    box-shadow: 2px 2px 3px 2px rgb(107, 107, 175);
+}
+
+.imageRotate {
+    /* Rotate Image */
+    -webkit-transform: rotate( 3deg);
+    -moz-transform: rotate( 3deg);
+    -o-transform: rotate( 3deg);
+    -ms-transform: rotate( 3deg);
+    transform: rotate( 3deg);
+}
+
+/*  header  ..................................... */
+
+header .jumbotron {
+    /* color: white; */
+    opacity: 0.9;
+    /* Controling the size of a jumbotron */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.gameLogoHolder {
+    margin-bottom: 20px;
+}
+
+.logoImage {
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.mainTitleHolder {
+    margin: 35px 0px 0px 20px;
+}
+
+.mainTitle {
+    /* todo: use mediq queries to control this */
+    font-size: 40px;
+    color:black;
+    /* font-family: 'Baloo Tammudu', cursive; */
+}
