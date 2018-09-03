@@ -5,28 +5,28 @@ body {
     /* background-color: rgb(206, 204, 204); */
 }
 
-.imgRnd10 {
+.elementRnd10 {
     /* Rounded image corners */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
 
-.imgRnd5 {
+.elementRnd5 {
     /* Rounded image corners */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
 
-.imageShadow {
+.elementShadow {
     /* Add drop shadow */
     -webkit-box-shadow: 2px 2px 3px 2px rgb(107, 107, 175);
     -moz-box-shadow: 2px 2px 3px 2px rgb(107, 107, 175);
     box-shadow: 2px 2px 3px 2px rgb(107, 107, 175);
 }
 
-.imageRotate {
+.elementRotate {
     /* Rotate Image */
     -webkit-transform: rotate( 3deg);
     -moz-transform: rotate( 3deg);
@@ -46,7 +46,7 @@ header .jumbotron {
     margin-bottom: 0px;
 }
 
-.gameLogoHolder {
+.appLogoHolder {
     margin-bottom: 20px;
 }
 
@@ -57,12 +57,39 @@ header .jumbotron {
 }
 
 .mainTitleHolder {
-    margin: 35px 0px 0px 20px;
+    margin: 35px 0px 0px 10px;
 }
 
 .mainTitle {
-    /* todo: use mediq queries to control this */
     font-size: 40px;
     color:black;
-    /* font-family: 'Baloo Tammudu', cursive; */
+    font-family: 'Baloo Tammudu', cursive;
+    font-size:5em;
+}
+
+.strongLabel {
+    font-weight: bold;
+    color: green;
+    font-size: 20px;
+}
+
+.sectionBorder {
+    margin-top: 20px;
+    border: 1px solid rgb(151, 218, 151);
+    padding: 10px 0px 10px 0px;
+}
+
+/* Topic section ................................. */
+.inputAddTopic {
+    margin-top: 10px;
+}
+
+.actionBtn {
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.topicBtn {
+    margin: 0px 4px 7px 0px;
+    width : 150px;
 }
