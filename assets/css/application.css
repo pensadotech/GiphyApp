@@ -79,6 +79,10 @@ header .jumbotron {
     padding: 10px 0px 10px 0px;
 }
 
+.resultArea {
+     margin-bottom: 40px;
+}
+
 /* Topic section ................................. */
 .inputAddTopic {
     margin-top: 10px;
@@ -92,4 +96,23 @@ header .jumbotron {
 .topicBtn {
     margin: 0px 4px 7px 0px;
     width : 150px;
+}
+
+.userMessages {
+    color: red;
+    font-weight:bold;
+}
+
+.videoTitle {
+    color: rgb(38, 4, 131);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.videoBody {
+    margin: 0px 10px 10px 0px;
+
+}
+.videoBody img{
+    height: 200px;
 }
