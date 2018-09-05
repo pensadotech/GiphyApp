@@ -23,7 +23,8 @@ let fixedTopics = {
     'Skunk',
     'Monkey',
     'Fish',
-    'Goldfish'
+    'Goldfish',
+    'Skunk'
   ]
 }
 
@@ -161,11 +162,44 @@ let giphyApp = {
       $('#videoGroup').append(videoHtml);
     });
   },
+  findVideo(videoId) {
+
+    let videoObj = '';
+
+    for(let i = 0; i < this.videoArr.length; i++) {
+      // Ge video from array
+      let vObj = this.videoArr[i];
+
+      if (vObj.id === videoId) {
+        videoObj = vObj;
+        break;
+      }
+    }
+
+    return videoObj;
+
+  },
   toggleVideo(imgTag) {
     
-    // TODO: how to toggle teh video
-    console.log(imgTag);
-
+    // Obtain attributes for selected video
+    let videoId = imgTag.attr('id');
+    let currentVideoUrl = imgTag.attr('src');
+    let videoObj = this.findVideo(videoId);
+    let videoUrl = '';
+    
+    // Compare current gif, and change for 
+    // alertnative one among fix and dynamic
+    if (currentVideoUrl === videoObj.imgStill) {
+      // if img still, replace with dynamic
+      videoUrl = videoObj.ImgDynamic;
+    }
+    else {
+      // it is dynamic, replace for still 
+      videoUrl = videoObj.imgStill;
+    }
+    
+    // Replace source attribute
+    imgTag.attr('src',videoUrl);
   }
 
 } //giphyApp
@@ -184,10 +218,7 @@ function getTotalVideosToDisplay(elementId) {
 
 //  initalize ..........................................
 console.log("GifTastic application");
-
 giphyApp.initalizeApp();
-//console.log(giphyApp);
-
 
 // Events ................................................
 $('#addTopicBtn').on('click', function () {
@@ -237,3 +268,4 @@ $(document).on('click','.videoItem', function() {
    // Togled from fix to dynamic
    giphyApp.toggleVideo($(this));
 })
+
