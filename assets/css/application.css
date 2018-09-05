@@ -94,8 +94,18 @@ header .jumbotron {
 }
 
 .topicBtn {
-    margin: 0px 4px 7px 0px;
+    margin: 0px 10px 10px 0px;
+    font-size: 20px;
     width : 150px;
+    height: 50px;
+
+}
+
+/* mefia queries .............................. */
+@media screen and (max-width: 576px) {
+    .topicBtn {
+        width : 150px;
+    }
 }
 
 .userMessages {
