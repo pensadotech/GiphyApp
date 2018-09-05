@@ -82,7 +82,7 @@ let giphyApp = {
 
     // Show search type in the screen 
     $('#videoResults').empty();
-    $('#videoResults').html(`<p>Results(${searchTopic})</p>`)
+    $('#videoResults').html(`<p>Results for "${searchTopic}" ( click on an image )</p>`)
 
     // buidl URL
     let url = this.giphyUrl;
