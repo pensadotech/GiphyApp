@@ -66,6 +66,18 @@ header .jumbotron {
     font-size: 5em;
 }
 
+.section {
+   margin: 0px; 
+   padding: 0px;
+   border: 2px solid gray;
+}
+
+.wrapper {
+    margin: 0px 10px 10px 20px;
+    padding: 5px 0px 5px 40px;
+    width: 95%;
+}
+
 .strongLabel {
     font-weight: bold;
     color: green;
@@ -73,20 +85,16 @@ header .jumbotron {
 }
 
 .sectionBorder {
-    margin-top: 20px;
+    margin-top: 5px;
     border: 1px solid rgb(151, 218, 151);
-    padding: 10px 0px 10px 0px;
+    /* padding: 10px 0px 10px 0px; */
 }
 
 .resultArea {
     margin-bottom: 40px;
 }
 
-.container {
-    background-color: #DBE9F4;
-    /* Transparent background */
-    margin: 5px auto 10px auto;
-}
+
 
 /* Topic section ................................. */
 .inputAddTopic {
@@ -106,24 +114,6 @@ header .jumbotron {
     height: 50px;
 }
 
-/* media queries .............................. */
-
-@media screen and (max-width: 985px)  and (min-width: 767px) {
-     
-    .actionBtn {
-        margin-bottom: 10px;
-        font-size: 23px;
-        width: 190px;
-    }
-
-    .topicBtn {
-        font-size: 30px;
-        width: 200px;
-        height: 70px;
-    }
-
-}
-
 .userMessages {
     color: red;
     font-weight: bold;
@@ -141,4 +131,23 @@ header .jumbotron {
 
 .videoBody img {
     height: 200px;
+}
+
+/* media queries .............................. */
+
+@media screen and (max-width: 985px)  and (min-width: 767px) {
+
+    .actionBtn {
+        margin-bottom: 10px;
+        font-size: 23px;
+        width: 190px;
+        
+    }
+
+    .topicBtn {
+        font-size: 30px;
+        width: 200px;
+        height: 70px;
+    }
+
 }
