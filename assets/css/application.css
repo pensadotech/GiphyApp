@@ -28,15 +28,14 @@ body {
 
 .elementRotate {
     /* Rotate Image */
-    -webkit-transform: rotate( 3deg);
-    -moz-transform: rotate( 3deg);
-    -o-transform: rotate( 3deg);
-    -ms-transform: rotate( 3deg);
-    transform: rotate( 3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
 }
 
 /*  header  ..................................... */
-
 header .jumbotron {
     /* color: white; */
     opacity: 0.9;
@@ -62,9 +61,9 @@ header .jumbotron {
 
 .mainTitle {
     font-size: 40px;
-    color:black;
+    color: black;
     font-family: 'Baloo Tammudu', cursive;
-    font-size:5em;
+    font-size: 5em;
 }
 
 .strongLabel {
@@ -80,7 +79,13 @@ header .jumbotron {
 }
 
 .resultArea {
-     margin-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.container {
+    background-color: #DBE9F4;
+    /* Transparent background */
+    margin: 5px auto 10px auto;
 }
 
 /* Topic section ................................. */
@@ -89,28 +94,39 @@ header .jumbotron {
 }
 
 .actionBtn {
-  margin-bottom: 10px;
-  width: 150px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 200px;
 }
 
 .topicBtn {
     margin: 0px 10px 10px 0px;
-    font-size: 20px;
-    width : 150px;
+    font-size: 18px;
+    width: 150px;
     height: 50px;
-
 }
 
-/* mefia queries .............................. */
-@media screen and (max-width: 576px) {
-    .topicBtn {
-        width : 150px;
+/* media queries .............................. */
+
+@media screen and (max-width: 985px)  and (min-width: 767px) {
+     
+    .actionBtn {
+        margin-bottom: 10px;
+        font-size: 23px;
+        width: 190px;
     }
+
+    .topicBtn {
+        font-size: 30px;
+        width: 200px;
+        height: 70px;
+    }
+
 }
 
 .userMessages {
     color: red;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .videoTitle {
@@ -121,8 +137,8 @@ header .jumbotron {
 
 .videoBody {
     margin: 0px 10px 10px 0px;
-
 }
-.videoBody img{
+
+.videoBody img {
     height: 200px;
 }

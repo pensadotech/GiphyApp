@@ -13,18 +13,12 @@ let fixedTopics = {
   topicArr: [
     'Dog',
     'Cat',
-    'Cow',
+    'Skunk',
     'Goat',
     'Horse',
     'Hamster',
     'bird',
-    'Turtle',
-    'Chinchilla',
-    'Skunk',
-    'Monkey',
-    'Fish',
-    'Goldfish',
-    'Skunk'
+    'Chinchilla'
   ]
 }
 
