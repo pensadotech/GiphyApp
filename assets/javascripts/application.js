@@ -14,7 +14,7 @@ let fixedTopics = {
     'Dog',
     'Cat',
     'Cow',
-    'Chiken',
+    'Goat',
     'Horse',
     'Hamster',
     'bird',
