@@ -29,7 +29,7 @@ let fixedTopics = {
 }
 
 let giphyApp = {
-  giphyUrl: 'http://api.giphy.com/v1/gifs/search',
+  giphyUrl: 'https://api.giphy.com/v1/gifs/search',
   appiKey: "BXIZxTggsYCzLEpHJaIc54rJ47T5LXPH",
   availableTopicsArr: [],
   videoArr: [],
