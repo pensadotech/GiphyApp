@@ -79,7 +79,7 @@ header .jumbotron {
 .strongLabel {
     font-weight: bold;
     color: green;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .sectionBorder {
@@ -92,8 +92,15 @@ header .jumbotron {
 }
 
 /* Topic section ................................. */
+.inputSelector {
+    font-size: 18px;
+    height: 40px;
+}
+
 .inputAddTopic {
     margin-top: 10px;
+    font-size: 18px;
+    height: 40px;
 }
 
 .actionBtn {
@@ -131,18 +138,40 @@ header .jumbotron {
 /* media queries .............................. */
 
 @media screen and (max-width: 985px)  and (min-width: 767px) {
+    
+    .strongLabel {
+        font-weight: bold;
+        color: green;
+        font-size: 35px;
+    }
+
+    .inputSelector {
+        font-size: 30px;
+        height: 70px;
+    }
+    .inputAddTopic {
+        margin-top: 10px;
+        font-size: 30px;
+        height: 70px;
+    }
 
     .actionBtn {
         margin-bottom: 10px;
-        font-size: 23px;
-        width: 190px;
+        font-size: 30px;
+        width: 260px;
+        height: 100px;
         
     }
 
     .topicBtn {
         font-size: 40px;
-        width: 255px;
-        height: 75px;
+        width: 280px;
+        height: 100px;
     }
+
+    .videoBody img {
+        height: 400px;
+    }
+    
 
 }
