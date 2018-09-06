@@ -1,5 +1,4 @@
-// Game java scripts
-
+// Application java scripts
 
 // Set sounds for the game
 var selectSound = new Audio('./assets/sounds/selectSound.mp3');
@@ -56,7 +55,6 @@ let giphyApp = {
     // Add new topic to the end of array, only if it does not exist yet
     if (this.availableTopicsArr.indexOf(newTopic) === -1) {
       this.availableTopicsArr.push(newTopic);
-      console.log(this.availableTopicsArr)
     }
 
     // redisplay topics
@@ -94,9 +92,6 @@ let giphyApp = {
     url += '&q=' + searchTopic;
     url += '&api_key=' + this.appiKey;
 
-    // console.log(searchTopic)
-    // console.log(url)
-
     // empty vide array
     this.videoArr = [];
 
@@ -106,8 +101,6 @@ let giphyApp = {
     // Make ajax request
     $.get(url)
       .then(function (response) {
-
-        //console.log(response.data)
 
         // get from each video the fixed and dynamic image
         response.data.forEach(video => {
@@ -136,8 +129,6 @@ let giphyApp = {
       })
   },
   displayVideos() {
-
-    console.log(this.videoArr);
 
     // Clear vide result area
     $('#videoGroup').empty();
@@ -214,7 +205,6 @@ function getTotalVideosToDisplay(elementId) {
 }
 
 //  initalize ..........................................
-console.log("GifTastic application");
 giphyApp.initalizeApp();
 
 // Events ................................................
