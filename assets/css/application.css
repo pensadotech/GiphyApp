@@ -67,8 +67,8 @@ header .jumbotron {
 }
 
 .section {
-   margin: 0px; 
-   padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .wrapper {
@@ -107,6 +107,7 @@ header .jumbotron {
     margin-bottom: 10px;
     font-size: 18px;
     width: 200px;
+    background-color:rgb(7, 103, 182);
 }
 
 .topicBtn {
@@ -114,6 +115,7 @@ header .jumbotron {
     font-size: 18px;
     width: 150px;
     height: 50px;
+    background-color: rgb(3, 126, 3);
 }
 
 .userMessages {
@@ -136,9 +138,7 @@ header .jumbotron {
 }
 
 /* media queries .............................. */
-
-@media screen and (max-width: 985px)  and (min-width: 767px) {
-    
+@media screen and (max-width: 985px) and (min-width: 767px) {
     .strongLabel {
         font-weight: bold;
         color: green;
@@ -149,6 +149,7 @@ header .jumbotron {
         font-size: 30px;
         height: 70px;
     }
+
     .inputAddTopic {
         margin-top: 10px;
         font-size: 30px;
@@ -160,7 +161,6 @@ header .jumbotron {
         font-size: 30px;
         width: 260px;
         height: 100px;
-        
     }
 
     .topicBtn {
@@ -172,6 +172,4 @@ header .jumbotron {
     .videoBody img {
         height: 400px;
     }
-    
-
 }
