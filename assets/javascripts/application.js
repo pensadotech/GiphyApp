@@ -1,5 +1,9 @@
 // Game java scripts
 
+
+// Set sounds for the game
+var selectSound = new Audio('./assets/sounds/selectSound.mp3');
+
 // Image object with ocnstructor
 function giphyImage(id, title, imgStill, ImgDynamic) {
   this.id = id;
@@ -17,7 +21,7 @@ let fixedTopics = {
     'Goat',
     'Horse',
     'Hamster',
-    'bird',
+    'Bird',
     'Chinchilla'
   ]
 }
@@ -160,7 +164,7 @@ let giphyApp = {
 
     let videoObj = '';
 
-    for(let i = 0; i < this.videoArr.length; i++) {
+    for (let i = 0; i < this.videoArr.length; i++) {
       // Ge video from array
       let vObj = this.videoArr[i];
 
@@ -174,26 +178,25 @@ let giphyApp = {
 
   },
   toggleVideo(imgTag) {
-    
+
     // Obtain attributes for selected video
     let videoId = imgTag.attr('id');
     let currentVideoUrl = imgTag.attr('src');
     let videoObj = this.findVideo(videoId);
     let videoUrl = '';
-    
+
     // Compare current gif, and change for 
     // alertnative one among fix and dynamic
     if (currentVideoUrl === videoObj.imgStill) {
       // if img still, replace with dynamic
       videoUrl = videoObj.ImgDynamic;
-    }
-    else {
+    } else {
       // it is dynamic, replace for still 
       videoUrl = videoObj.imgStill;
     }
-    
+
     // Replace source attribute
-    imgTag.attr('src',videoUrl);
+    imgTag.attr('src', videoUrl);
   }
 
 } //giphyApp
@@ -219,6 +222,8 @@ $('#addTopicBtn').on('click', function () {
 
   // Control defualt behavior
   event.preventDefault();
+  // Select sound
+  selectSound.play();
   // Obtain value in input element
   let newTopic = $('#addTopicInput').val().trim();
   // Clear input for a possible new entry
@@ -233,6 +238,8 @@ $('#addTopicBtn').on('click', function () {
 
 $('#removeTopicBtn').on('click', function () {
 
+  // Select sound
+  selectSound.play();
   // Control defualt behavior
   event.preventDefault();
   // Obtain value in input element
@@ -248,7 +255,8 @@ $('#removeTopicBtn').on('click', function () {
 })
 
 $(document).on('click', '.topicBtn', function () {
-
+  // Select sound
+  selectSound.play();
   // get the total of videos to see
   let totVideos = getTotalVideosToDisplay('numVideos');
   // get data-value from selected button
@@ -258,8 +266,9 @@ $(document).on('click', '.topicBtn', function () {
 
 })
 
-$(document).on('click','.videoItem', function() {
-   // Togled from fix to dynamic
-   giphyApp.toggleVideo($(this));
+$(document).on('click', '.videoItem', function () {
+  // Select sound
+  selectSound.play();
+  // Togled from fix to dynamic
+  giphyApp.toggleVideo($(this));
 })
-
