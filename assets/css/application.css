@@ -5,38 +5,37 @@ body {
     /* background-color: rgb(206, 204, 204); */
 }
 
-.imgRnd10 {
+.elementRnd10 {
     /* Rounded image corners */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
 
-.imgRnd5 {
+.elementRnd5 {
     /* Rounded image corners */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
 
-.imageShadow {
+.elementShadow {
     /* Add drop shadow */
     -webkit-box-shadow: 2px 2px 3px 2px rgb(107, 107, 175);
     -moz-box-shadow: 2px 2px 3px 2px rgb(107, 107, 175);
     box-shadow: 2px 2px 3px 2px rgb(107, 107, 175);
 }
 
-.imageRotate {
+.elementRotate {
     /* Rotate Image */
-    -webkit-transform: rotate( 3deg);
-    -moz-transform: rotate( 3deg);
-    -o-transform: rotate( 3deg);
-    -ms-transform: rotate( 3deg);
-    transform: rotate( 3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
 }
 
 /*  header  ..................................... */
-
 header .jumbotron {
     /* color: white; */
     opacity: 0.9;
@@ -46,7 +45,7 @@ header .jumbotron {
     margin-bottom: 0px;
 }
 
-.gameLogoHolder {
+.appLogoHolder {
     margin-bottom: 20px;
 }
 
@@ -57,12 +56,120 @@ header .jumbotron {
 }
 
 .mainTitleHolder {
-    margin: 35px 0px 0px 20px;
+    margin: 35px 0px 0px 10px;
 }
 
 .mainTitle {
-    /* todo: use mediq queries to control this */
     font-size: 40px;
-    color:black;
-    /* font-family: 'Baloo Tammudu', cursive; */
+    color: black;
+    font-family: 'Baloo Tammudu', cursive;
+    font-size: 5em;
+}
+
+.section {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    padding: 5px 0px 5px 40px;
+    width: 95%;
+}
+
+.strongLabel {
+    font-weight: bold;
+    color: green;
+    font-size: 25px;
+}
+
+.sectionBorder {
+    margin-top: 5px;
+    border: 1px solid rgb(151, 218, 151);
+}
+
+.resultArea {
+    margin-bottom: 40px;
+}
+
+/* Topic section ................................. */
+.inputSelector {
+    font-size: 18px;
+    height: 40px;
+}
+
+.inputAddTopic {
+    margin-top: 10px;
+    font-size: 18px;
+    height: 40px;
+}
+
+.actionBtn {
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 200px;
+    background-color: rgb(7, 103, 182);
+}
+
+.topicBtn {
+    margin: 0px 10px 10px 0px;
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(3, 126, 3);
+}
+
+.userMessages {
+    color: red;
+    font-weight: bold;
+}
+
+.videoTitle {
+    color: rgb(38, 4, 131);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.videoBody {
+    margin: 0px 10px 10px 0px;
+}
+
+.videoBody img {
+    height: 200px;
+}
+
+/* media queries .............................. */
+@media screen and (max-width: 985px) and (min-width: 767px) {
+    .strongLabel {
+        font-weight: bold;
+        color: green;
+        font-size: 35px;
+    }
+
+    .inputSelector {
+        font-size: 30px;
+        height: 70px;
+    }
+
+    .inputAddTopic {
+        margin-top: 10px;
+        font-size: 30px;
+        height: 70px;
+    }
+
+    .actionBtn {
+        margin-bottom: 10px;
+        font-size: 30px;
+        width: 260px;
+        height: 100px;
+    }
+
+    .topicBtn {
+        font-size: 40px;
+        width: 280px;
+        height: 100px;
+    }
+
+    .videoBody img {
+        height: 400px;
+    }
 }

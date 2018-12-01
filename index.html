@@ -28,8 +28,9 @@
   <header class="header">
     <div class="jumbotron">
       <div class="d-flex d-inline-flex">
-        <div class="col-sm-4 gameLogoHolder">
-          <img class="img-fluid logoImage imgRnd10 imageRotate imageShadow" src="./assets/images/giphy_icon.png" alt="GIPHY">
+        <div class="col-sm-4 appLogoHolder">
+          <img class="img-fluid logoImage elementRnd10 elementRotate elementShadow" src="./assets/images/giphy_icon.png"
+            alt="GIPHY">
         </div>
         <div class="col-sm-6 mainTitleHolder">
           <h1 class="mainTitle">GifTastic</h1>
@@ -40,31 +41,72 @@
   </header>
 
   <section class="section">
-    <div class="container">
+    <div class="wrapper">
 
-      <div id="topics">
-        <!-- Buttons with topics goes here -->
-      </div>
-
-      <div id="addTopic">
-        <form class="guessForm">
-          <div class="form-group">
-            <label for="addTopic">New topic</label>
-            <input type="text" name="addTopic" id="addTopic" placeholder="add a new topic here...">
+      <div class="row sectionBorder elementRnd10">
+        <div class="col-sm-4">
+          <div id="addTopic">
+            <form class="addTopicForm">
+              <div class="form-group">
+                <label for="numVideos"  class="strongLabel">Number of videos retreive</label>
+                <select class="form-control inputSelector" id="numVideos">
+                  <option>10</option>
+                  <option>15</option>
+                  <option>20</option>
+                  <option>25</option>
+                  <option>30</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="addTopic" class="strongLabel">New topic</label>
+                <input type="text" class="form-control inputAddTopic" name="addTopic" id="addTopicInput" placeholder="add a new topic here...">
+              </div>
+              <button class="btn btn-info actionBtn" id="addTopicBtn">
+                <i class="fas fa-plus-circle"></i> Add Topic
+              </button>
+              <button class="btn btn-info actionBtn" id="removeTopicBtn">
+                <i class="fas fa-trash-alt"></i> Remove Topic
+              </button>
+            </form>
           </div>
-          <button class="btn waves-effect waves-light btn-large" type="submit" id="submit">
-            <i class="material-icons left">add_box</i>Add Topic
-          </button>
-        </form>
+          <div id="userMsg" class="userMessages">
+            <!-- User message goes here -->
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <p class="strongLabel">Available topics (select One)</p>
+          <div id="topicGroup">
+            <!-- Topic buttons goes here -->
+          </div>
+        </div>
       </div>
 
-      <div class="videoResults">
+      <div class="row sectionBorder resultArea elementRnd10">
+        <div class="col-sm-12 ">
+          <p id="videoResults" class="strongLabel">Results</p>
+          <div id="videoGroup" class="videoResults">
 
-        <!--  results goes here -->
+            <!--  results goes here -->
 
+            <!--
+              <div class="giphyImage d-inline-block">
+              <div class="videoTitle">
+                <p>shiba inu dog GIF</p>
+              </div>
+              <div class="videoBody">
+                <img id="v123" class="videoItem" src="https://media0.giphy.com/media/mCRJDo24UvJMA/200_s.gif" alt="Giphy images">
+                <img id="v123" class="videoItem" src="https://media0.giphy.com/media/mCRJDo24UvJMA/200w.gif" alt="Giphy images">
+              </div>
+            </div> 
+          -->
+
+
+          </div>
+        </div>
       </div>
 
     </div>
+    <!-- end container -->
   </section>
 
   <footer class="footer">
@@ -72,7 +114,9 @@
   </footer>
 
   <!-- Script section  -->
-
+  <script src='https://code.jquery.com/jquery-3.3.1.js' integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60='
+    crossorigin='anonymous'></script>
+  <script src="./assets/javascripts/application.js"></script>
 </body>
 
 </html>
